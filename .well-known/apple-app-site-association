@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "4WHLN4A83U.app.midman.middleman",
+        "paths": ["*", "/auth/*", "/app/*"]
+      }
+    ]
+  }
+}
