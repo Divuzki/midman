@@ -4,9 +4,8 @@
     "target": {
       "namespace": "android_app",
       "package_name": "app.midman.middleman",
-      "sha256_cert_fingerprints": [
-        "16:13:8E:9F:4A:E3:54:7F:3B:77:21:96:2F:63:5D:7B:8C:D5:3B:6B:C5:B1:43:57:24:62:AE:94:FE:59:A0:5D"
-      ]
+      "sha256_cert_fingerprints":
+        ["16:13:8E:9F:4A:E3:54:7F:3B:77:21:96:2F:63:5D:7B:8C:D5:3B:6B:C5:B1:43:57:24:62:AE:94:FE:59:A0:5D"]
     }
   }
 ]
