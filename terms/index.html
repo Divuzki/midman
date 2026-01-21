@@ -1,404 +1,587 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Terms and Conditions - Middleman</title>
-    <meta name="description" content="Read our Terms and Conditions to understand the rules and regulations for using Middleman.">
+    <meta
+      name="description"
+      content="Read our Terms and Conditions to understand the rules and regulations for using Middleman."
+    />
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
-    
+
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#3191EB',
-                        secondary: '#05ECF4',
-                        background: '#01032D',
-                        dark: '#01032D',
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    
-    <style>
-        body {
-            background-color: #01032D;
-            color: #FFFFFF;
-        }
-        .gradient-text {
-            background: linear-gradient(90deg, #3191EB 0%, #05ECF4 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        /* Custom scrollbar for webkit */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #01032D;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #333;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #555;
-        }
-    </style>
-</head>
-<body class="antialiased font-sans">
 
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#3191EB",
+              secondary: "#05ECF4",
+              background: "#01032D",
+              dark: "#01032D",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      body {
+        background-color: #01032d;
+        color: #ffffff;
+      }
+      .gradient-text {
+        background: linear-gradient(90deg, #3191eb 0%, #05ecf4 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      /* Custom scrollbar for webkit */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #01032d;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    </style>
+  </head>
+  <body class="antialiased font-sans">
     <!-- Navigation -->
-    <nav class="sticky top-0 w-full z-50 py-4 bg-[#01032D]/90 backdrop-blur-md border-b border-white/10">
-        <div class="container mx-auto px-6 flex justify-between items-center">
-            <a href="https://www.midman.app" class="flex items-center space-x-2">
-                <div class="w-6 h-6 p-0.5 rounded bg-white flex items-center justify-center">
-                    <img src="/logo.png" alt="Middleman Logo" class="w-full h-full object-contain">
-                </div>
-                <span class="text-xl font-bold tracking-tight">Middleman</span>
-            </a>
-            <a href="/" class="text-sm font-semibold text-gray-300 hover:text-white transition-colors flex items-center">
-                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-                Back to Home
-            </a>
-        </div>
+    <nav
+      class="sticky top-0 w-full z-50 py-4 bg-[#01032D]/90 backdrop-blur-md border-b border-white/10"
+    >
+      <div class="container mx-auto px-6 flex justify-between items-center">
+        <a href="https://www.midman.app" class="flex items-center space-x-2">
+          <div
+            class="w-6 h-6 p-0.5 rounded bg-white flex items-center justify-center"
+          >
+            <img
+              src="/logo.png"
+              alt="Middleman Logo"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <span class="text-xl font-bold tracking-tight">Middleman</span>
+        </a>
+        <a
+          href="/"
+          class="text-sm font-semibold text-gray-300 hover:text-white transition-colors flex items-center"
+        >
+          <svg
+            class="w-4 h-4 mr-1"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            ></path>
+          </svg>
+          Back to Home
+        </a>
+      </div>
     </nav>
 
     <!-- Content -->
     <main class="container mx-auto px-6 py-12 max-w-4xl">
-        <header class="mb-16">
-            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 gradient-text">Terms and Conditions</h1>
-            <p class="text-gray-400">Last Updated: January 18, 2026</p>
-        </header>
+      <header class="mb-16">
+        <h1
+          class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 gradient-text"
+        >
+          Terms and Conditions
+        </h1>
+        <p class="text-gray-400">Last Updated: January 18, 2026</p>
+      </header>
 
-        <div class="space-y-12 text-gray-300 leading-relaxed text-lg">
-            
-            <section>
-                <p class="mb-6">
-                    Welcome to Middleman. These Terms and Conditions (“Terms”) govern your access to and use of the Middleman mobile application, website, and related services (collectively, the “Platform”).
-                </p>
-                <p class="mb-6 font-semibold text-white">
-                    By creating an account or using the Platform, you agree to these Terms. If you do not agree, please do not use Middleman.
-                </p>
-            </section>
+      <div class="space-y-12 text-gray-300 leading-relaxed text-lg">
+        <section>
+          <p class="mb-6">
+            Welcome to Middleman. These Terms and Conditions (“Terms”) govern
+            your access to and use of the Middleman mobile application, website,
+            and related services (collectively, the “Platform”).
+          </p>
+          <p class="mb-6 font-semibold text-white">
+            By creating an account or using the Platform, you agree to these
+            Terms. If you do not agree, please do not use Middleman.
+          </p>
+        </section>
 
-            <section>
-                <h2 class="text-2xl font-bold text-white mb-6">1. About Middleman</h2>
-                <p class="mb-4">Middleman Technologies Ltd (“Middleman,” “we,” “us,” or “our”) is a technology platform incorporated in Nigeria that facilitates:</p>
-                <ul class="list-disc pl-6 space-y-2 mb-6 marker:text-primary">
-                    <li>Peer-to-peer escrow transactions</li>
-                    <li>Wallet-based storage of funds</li>
-                    <li>Peer-to-peer 1v1 challenges and outcome-based wagers</li>
-                    <li>Dispute resolution support</li>
-                </ul>
-                <div class="p-4 bg-primary/10 border border-primary/20 rounded-xl text-white">
-                    <strong>Note:</strong> Middleman is not a bank, financial institution, bookmaker, or gambling operator.
-                </div>
-            </section>
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">1. About Middleman</h2>
+          <p class="mb-4">
+            Middleman Technologies Ltd (“Middleman,” “we,” “us,” or “our”) is a
+            technology platform incorporated in Nigeria that facilitates:
+          </p>
+          <ul class="list-disc pl-6 space-y-2 mb-6 marker:text-primary">
+            <li>Peer-to-peer escrow transactions</li>
+            <li>Wallet-based storage of funds</li>
+            <li>Peer-to-peer 1v1 challenges and outcome-based wagers</li>
+            <li>Dispute resolution support</li>
+          </ul>
+          <div
+            class="p-4 bg-primary/10 border border-primary/20 rounded-xl text-white"
+          >
+            <strong>Note:</strong> Middleman is not a bank, financial
+            institution, bookmaker, or gambling operator.
+          </div>
+        </section>
 
-            <section>
-                <h2 class="text-2xl font-bold text-white mb-6">2. Eligibility</h2>
-                <p class="mb-4">You may use Middleman only if:</p>
-                <ul class="list-disc pl-6 space-y-2 mb-6 marker:text-primary">
-                    <li>You are 18 years or older</li>
-                    <li>You have legal capacity to enter binding agreements</li>
-                    <li>Your use of the Platform is legal in your jurisdiction</li>
-                </ul>
-                <p>You are solely responsible for ensuring that your use of Middleman complies with all applicable laws in your country or region.</p>
-            </section>
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">2. Eligibility</h2>
+          <p class="mb-4">You may use Middleman only if:</p>
+          <ul class="list-disc pl-6 space-y-2 mb-6 marker:text-primary">
+            <li>You are 18 years or older</li>
+            <li>You have legal capacity to enter binding agreements</li>
+            <li>Your use of the Platform is legal in your jurisdiction</li>
+          </ul>
+          <p>
+            You are solely responsible for ensuring that your use of Middleman
+            complies with all applicable laws in your country or region.
+          </p>
+        </section>
 
-            <section>
-                <h2 class="text-2xl font-bold text-white mb-6">3. Nature of the Service (Important Disclaimer)</h2>
-                <div class="p-6 bg-red-500/10 border border-red-500/20 rounded-xl text-white mb-6">
-                    <h3 class="font-bold mb-4 text-red-300">DISCLAIMER</h3>
-                    <p class="mb-4">Middleman acts solely as a neutral technology intermediary.</p>
-                    <ul class="list-disc pl-6 space-y-2 marker:text-red-400">
-                        <li>We do not verify the legality, quality, safety, or feasibility of transactions or wagers</li>
-                        <li>We do not act as an agent, trustee, partner, or fiduciary</li>
-                        <li>We do not guarantee outcomes, performance, or user behavior</li>
-                    </ul>
-                </div>
-                <p>All transactions are entered into directly between users.</p>
-            </section>
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">
+            3. Nature of the Service (Important Disclaimer)
+          </h2>
+          <div
+            class="p-6 bg-red-500/10 border border-red-500/20 rounded-xl text-white mb-6"
+          >
+            <h3 class="font-bold mb-4 text-red-300">DISCLAIMER</h3>
+            <p class="mb-4">
+              Middleman acts solely as a neutral technology intermediary.
+            </p>
+            <ul class="list-disc pl-6 space-y-2 marker:text-red-400">
+              <li>
+                We do not verify the legality, quality, safety, or feasibility
+                of transactions or wagers
+              </li>
+              <li>We do not act as an agent, trustee, partner, or fiduciary</li>
+              <li>
+                We do not guarantee outcomes, performance, or user behavior
+              </li>
+            </ul>
+          </div>
+          <p>All transactions are entered into directly between users.</p>
+        </section>
 
-            <section>
-                <h2 class="text-2xl font-bold text-white mb-6">4. Account Registration & Security</h2>
-                <p class="mb-4">You agree to:</p>
-                <ul class="list-disc pl-6 space-y-2 mb-6 marker:text-primary">
-                    <li>Provide accurate and complete information</li>
-                    <li>Keep your login credentials secure</li>
-                    <li>Notify us immediately of unauthorized access</li>
-                </ul>
-                <p>You are responsible for all activities conducted through your account.</p>
-            </section>
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">
+            4. Account Registration & Security
+          </h2>
+          <p class="mb-4">You agree to:</p>
+          <ul class="list-disc pl-6 space-y-2 mb-6 marker:text-primary">
+            <li>Provide accurate and complete information</li>
+            <li>Keep your login credentials secure</li>
+            <li>Notify us immediately of unauthorized access</li>
+          </ul>
+          <p>
+            You are responsible for all activities conducted through your
+            account.
+          </p>
+        </section>
 
-            <section>
-                <h2 class="text-2xl font-bold text-white mb-6">5. Wallet & Funds Handling</h2>
-                
-                <div class="mb-6">
-                    <h3 class="text-xl font-semibold text-white mb-3">5.1 Wallet System</h3>
-                    <p class="mb-4">Each user is provided with a digital wallet to store funds for Platform use.</p>
-                    <ul class="list-disc pl-6 space-y-2 mb-4 marker:text-primary">
-                        <li>Wallets are non-interest bearing</li>
-                        <li>Funds are held via PSP-controlled accounts</li>
-                        <li>Funds may be pooled with other users’ funds</li>
-                    </ul>
-                    <p class="text-gray-400 italic">Middleman does not hold funds as a trustee or custodian.</p>
-                </div>
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">
+            5. Wallet & Funds Handling
+          </h2>
 
-                <div class="mb-6">
-                    <h3 class="text-xl font-semibold text-white mb-3">5.2 Deposits & Withdrawals</h3>
-                    <ul class="list-disc pl-6 space-y-2 mb-4 marker:text-primary">
-                        <li>Deposits and withdrawals are processed through licensed third-party payment service providers</li>
-                        <li>Processing times may vary due to compliance, fraud checks, or PSP delays</li>
-                        <li>Middleman is not liable for PSP outages or failures</li>
-                    </ul>
-                </div>
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold text-white mb-3">
+              5.1 Wallet System
+            </h3>
+            <p class="mb-4">
+              Each user is provided with a digital wallet to store funds for
+              Platform use.
+            </p>
+            <ul class="list-disc pl-6 space-y-2 mb-4 marker:text-primary">
+              <li>Wallets are non-interest bearing</li>
+              <li>Funds are held via PSP-controlled accounts</li>
+              <li>Funds may be pooled with other users’ funds</li>
+            </ul>
+            <p class="text-gray-400 italic">
+              Middleman does not hold funds as a trustee or custodian.
+            </p>
+          </div>
 
-                <div class="mb-6">
-                    <h3 class="text-xl font-semibold text-white mb-3">5.3 Holds, Freezes & Confiscation</h3>
-                    <p class="mb-4">Middleman reserves the right to:</p>
-                    <ul class="list-disc pl-6 space-y-2 mb-4 marker:text-primary">
-                        <li>Temporarily or permanently freeze funds</li>
-                        <li>Restrict withdrawals</li>
-                        <li>Confiscate funds linked to illegal activity, fraud, or regulatory violations</li>
-                    </ul>
-                    <p>This may occur without prior notice where legally required.</p>
-                </div>
-            </section>
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold text-white mb-3">
+              5.2 Deposits & Withdrawals
+            </h3>
+            <ul class="list-disc pl-6 space-y-2 mb-4 marker:text-primary">
+              <li>
+                Deposits and withdrawals are processed through licensed
+                third-party payment service providers
+              </li>
+              <li>
+                Processing times may vary due to compliance, fraud checks, or
+                PSP delays
+              </li>
+              <li>Middleman is not liable for PSP outages or failures</li>
+            </ul>
+          </div>
 
-            <section>
-                <h2 class="text-2xl font-bold text-white mb-6">6. Escrow Transactions</h2>
-                
-                <div class="mb-6">
-                    <h3 class="text-xl font-semibold text-white mb-3">6.1 How Escrow Works</h3>
-                    <ul class="list-disc pl-6 space-y-2 marker:text-primary">
-                        <li>Funds are locked until agreed conditions are met</li>
-                        <li>Completion requires mutual confirmation or dispute resolution</li>
-                        <li>Users must clearly define deal terms before funding</li>
-                    </ul>
-                </div>
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold text-white mb-3">
+              5.3 Holds, Freezes & Confiscation
+            </h3>
+            <p class="mb-4">Middleman reserves the right to:</p>
+            <ul class="list-disc pl-6 space-y-2 mb-4 marker:text-primary">
+              <li>Temporarily or permanently freeze funds</li>
+              <li>Restrict withdrawals</li>
+              <li>
+                Confiscate funds linked to illegal activity, fraud, or
+                regulatory violations
+              </li>
+            </ul>
+            <p>This may occur without prior notice where legally required.</p>
+          </div>
+        </section>
 
-                <div>
-                    <h3 class="text-xl font-semibold text-white mb-3">6.2 User Responsibility</h3>
-                    <p class="mb-4">You acknowledge that:</p>
-                    <ul class="list-disc pl-6 space-y-2 marker:text-primary">
-                        <li>Middleman does not inspect goods, services, or deliverables</li>
-                        <li>You bear full responsibility for deal clarity and legality</li>
-                        <li>Disputes are resolved based only on submitted evidence</li>
-                    </ul>
-                </div>
-            </section>
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">
+            6. Escrow Transactions
+          </h2>
 
-            <section>
-                <h2 class="text-2xl font-bold text-white mb-6">7. 1v1 Challenges & Wagers</h2>
-                
-                <div class="mb-6">
-                    <h3 class="text-xl font-semibold text-white mb-3">7.1 Nature of Wagers</h3>
-                    <ul class="list-disc pl-6 space-y-2 mb-4 marker:text-primary">
-                        <li>All wagers are peer-to-peer</li>
-                        <li>Middleman does not set odds, participate, or profit from outcomes</li>
-                        <li>Outcomes must be objectively verifiable</li>
-                    </ul>
-                    <p class="text-white font-medium">Middleman is not a bookmaker or gambling operator.</p>
-                </div>
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold text-white mb-3">
+              6.1 How Escrow Works
+            </h3>
+            <ul class="list-disc pl-6 space-y-2 marker:text-primary">
+              <li>Funds are locked until agreed conditions are met</li>
+              <li>
+                Completion requires mutual confirmation or dispute resolution
+              </li>
+              <li>Users must clearly define deal terms before funding</li>
+            </ul>
+          </div>
 
-                <div class="mb-6">
-                    <h3 class="text-xl font-semibold text-white mb-3">7.2 Legal Restrictions</h3>
-                    <ul class="list-disc pl-6 space-y-2 marker:text-primary">
-                        <li>Wagers are restricted in jurisdictions where prohibited</li>
-                        <li>Users are responsible for determining legality in their location</li>
-                        <li>Middleman may restrict or disable wagers where legally required</li>
-                    </ul>
-                </div>
+          <div>
+            <h3 class="text-xl font-semibold text-white mb-3">
+              6.2 User Responsibility
+            </h3>
+            <p class="mb-4">You acknowledge that:</p>
+            <ul class="list-disc pl-6 space-y-2 marker:text-primary">
+              <li>
+                Middleman does not inspect goods, services, or deliverables
+              </li>
+              <li>
+                You bear full responsibility for deal clarity and legality
+              </li>
+              <li>Disputes are resolved based only on submitted evidence</li>
+            </ul>
+          </div>
+        </section>
 
-                <div>
-                    <h3 class="text-xl font-semibold text-white mb-3">7.3 Wager Cancellation</h3>
-                    <p class="mb-2">Middleman will not void wagers arbitrarily. However, wagers may be cancelled if:</p>
-                    <ul class="list-disc pl-6 space-y-2 marker:text-primary">
-                        <li>They violate these Terms</li>
-                        <li>They involve illegal or harmful activity</li>
-                        <li>Required by law or regulators</li>
-                    </ul>
-                </div>
-            </section>
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">
+            7. 1v1 Challenges & Wagers
+          </h2>
 
-            <section>
-                <h2 class="text-2xl font-bold text-white mb-6">8. Fees</h2>
-                <ul class="list-disc pl-6 space-y-2 marker:text-primary">
-                    <li>Middleman charges service and processing fees</li>
-                    <li>Fees are disclosed before confirmation</li>
-                    <li>Fees may be changed at any time</li>
-                    <li>Earned fees are non-refundable</li>
-                </ul>
-            </section>
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold text-white mb-3">
+              7.1 Nature of Wagers
+            </h3>
+            <ul class="list-disc pl-6 space-y-2 mb-4 marker:text-primary">
+              <li>All wagers are peer-to-peer</li>
+              <li>
+                Middleman does not set odds, participate, or profit from
+                outcomes
+              </li>
+              <li>Outcomes must be objectively verifiable</li>
+            </ul>
+            <p class="text-white font-medium">
+              Middleman is not a bookmaker or gambling operator.
+            </p>
+          </div>
 
-            <section>
-                <h2 class="text-2xl font-bold text-white mb-6">9. Disputes & Appeals</h2>
-                
-                <div class="mb-6">
-                    <h3 class="text-xl font-semibold text-white mb-3">9.1 Dispute Resolution</h3>
-                    <ul class="list-disc pl-6 space-y-2 marker:text-primary">
-                        <li>Disputes must be raised within the in-app timeframe</li>
-                        <li>Evidence may include messages, files, screenshots, or external proof</li>
-                        <li>Admins may apply reasonable judgment and common sense</li>
-                    </ul>
-                </div>
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold text-white mb-3">
+              7.2 Legal Restrictions
+            </h3>
+            <ul class="list-disc pl-6 space-y-2 marker:text-primary">
+              <li>Wagers are restricted in jurisdictions where prohibited</li>
+              <li>
+                Users are responsible for determining legality in their location
+              </li>
+              <li>
+                Middleman may restrict or disable wagers where legally required
+              </li>
+            </ul>
+          </div>
 
-                <div>
-                    <h3 class="text-xl font-semibold text-white mb-3">9.2 Appeals</h3>
-                    <ul class="list-disc pl-6 space-y-2 mb-4 marker:text-primary">
-                        <li>Users are entitled to one (1) appeal</li>
-                        <li>Appeal decisions are final</li>
-                    </ul>
-                    <p>Middleman is not required to conduct exhaustive investigations.</p>
-                </div>
-            </section>
+          <div>
+            <h3 class="text-xl font-semibold text-white mb-3">
+              7.3 Wager Cancellation
+            </h3>
+            <p class="mb-2">
+              Middleman will not void wagers arbitrarily. However, wagers may be
+              cancelled if:
+            </p>
+            <ul class="list-disc pl-6 space-y-2 marker:text-primary">
+              <li>They violate these Terms</li>
+              <li>They involve illegal or harmful activity</li>
+              <li>Required by law or regulators</li>
+            </ul>
+          </div>
+        </section>
 
-            <section>
-                <h2 class="text-2xl font-bold text-white mb-6">10. Chargebacks & Fraud</h2>
-                <p class="mb-4">If a user initiates a chargeback after using the Platform:</p>
-                <ul class="list-disc pl-6 space-y-2 mb-4 marker:text-primary">
-                    <li>Middleman may debit the user’s wallet</li>
-                    <li>The account may be restricted until resolved</li>
-                    <li>The user agrees to indemnify Middleman for related losses</li>
-                </ul>
-            </section>
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">8. Fees</h2>
+          <ul class="list-disc pl-6 space-y-2 marker:text-primary">
+            <li>Middleman charges service and processing fees</li>
+            <li>Fees are disclosed before confirmation</li>
+            <li>Fees may be changed at any time</li>
+            <li>Earned fees are non-refundable</li>
+          </ul>
+        </section>
 
-            <section>
-                <h2 class="text-2xl font-bold text-white mb-6">11. KYC, AML & Sanctions Compliance</h2>
-                <p class="mb-4">You agree to:</p>
-                <ul class="list-disc pl-6 space-y-2 mb-4 marker:text-primary">
-                    <li>Complete identity verification when required</li>
-                    <li>Submit valid documentation</li>
-                    <li>Undergo AML, fraud, and sanctions screening</li>
-                </ul>
-                <p>Middleman may cooperate with law enforcement and regulators.</p>
-            </section>
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">
+            9. Disputes & Appeals
+          </h2>
 
-            <section>
-                <h2 class="text-2xl font-bold text-white mb-6">12. Prohibited Activities</h2>
-                <p class="mb-4">You must not use Middleman for:</p>
-                <ul class="list-disc pl-6 space-y-2 mb-4 marker:text-primary">
-                    <li>Fraud or deception</li>
-                    <li>Money laundering or terrorism financing</li>
-                    <li>Illegal transactions or wagers</li>
-                    <li>Abuse, harassment, or exploitation</li>
-                    <li>System abuse or manipulation</li>
-                </ul>
-                <p class="text-red-400 font-semibold">Violation may result in account termination.</p>
-            </section>
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold text-white mb-3">
+              9.1 Dispute Resolution
+            </h3>
+            <ul class="list-disc pl-6 space-y-2 marker:text-primary">
+              <li>Disputes must be raised within the in-app timeframe</li>
+              <li>
+                Evidence may include messages, files, screenshots, or external
+                proof
+              </li>
+              <li>Admins may apply reasonable judgment and common sense</li>
+            </ul>
+          </div>
 
-            <section>
-                <h2 class="text-2xl font-bold text-white mb-6">13. Account Suspension & Termination</h2>
-                <p class="mb-4">Middleman may suspend or terminate accounts if:</p>
-                <ul class="list-disc pl-6 space-y-2 mb-4 marker:text-primary">
-                    <li>These Terms are breached</li>
-                    <li>Illegal or suspicious activity is detected</li>
-                    <li>Required by law or regulators</li>
-                </ul>
-                <p>Users will be provided an explanation where reasonably possible.</p>
-            </section>
+          <div>
+            <h3 class="text-xl font-semibold text-white mb-3">9.2 Appeals</h3>
+            <ul class="list-disc pl-6 space-y-2 mb-4 marker:text-primary">
+              <li>Users are entitled to one (1) appeal</li>
+              <li>Appeal decisions are final</li>
+            </ul>
+            <p>
+              Middleman is not required to conduct exhaustive investigations.
+            </p>
+          </div>
+        </section>
 
-            <section>
-                <h2 class="text-2xl font-bold text-white mb-6">14. Feature Availability</h2>
-                <p class="mb-4">Middleman may:</p>
-                <ul class="list-disc pl-6 space-y-2 marker:text-primary">
-                    <li>Add, modify, or remove features</li>
-                    <li>Disable services temporarily or permanently</li>
-                    <li>Do so without prior notice</li>
-                </ul>
-            </section>
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">
+            10. Chargebacks & Fraud
+          </h2>
+          <p class="mb-4">
+            If a user initiates a chargeback after using the Platform:
+          </p>
+          <ul class="list-disc pl-6 space-y-2 mb-4 marker:text-primary">
+            <li>Middleman may debit the user’s wallet</li>
+            <li>The account may be restricted until resolved</li>
+            <li>The user agrees to indemnify Middleman for related losses</li>
+          </ul>
+        </section>
 
-            <section>
-                <h2 class="text-2xl font-bold text-white mb-6">15. Taxes</h2>
-                <p>Users are solely responsible for any taxes arising from Platform use.</p>
-            </section>
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">
+            11. KYC, AML & Sanctions Compliance
+          </h2>
+          <p class="mb-4">You agree to:</p>
+          <ul class="list-disc pl-6 space-y-2 mb-4 marker:text-primary">
+            <li>Complete identity verification when required</li>
+            <li>Submit valid documentation</li>
+            <li>Undergo AML, fraud, and sanctions screening</li>
+          </ul>
+          <p>Middleman may cooperate with law enforcement and regulators.</p>
+        </section>
 
-            <section>
-                <h2 class="text-2xl font-bold text-white mb-6">16. Intellectual Property</h2>
-                <p>All Platform content and software belong to Middleman. Unauthorized use is prohibited.</p>
-            </section>
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">
+            12. Prohibited Activities
+          </h2>
+          <p class="mb-4">You must not use Middleman for:</p>
+          <ul class="list-disc pl-6 space-y-2 mb-4 marker:text-primary">
+            <li>Fraud or deception</li>
+            <li>Money laundering or terrorism financing</li>
+            <li>Illegal transactions or wagers</li>
+            <li>Abuse, harassment, or exploitation</li>
+            <li>System abuse or manipulation</li>
+          </ul>
+          <p class="text-red-400 font-semibold">
+            Violation may result in account termination.
+          </p>
+        </section>
 
-            <section>
-                <h2 class="text-2xl font-bold text-white mb-6">17. Limitation of Liability</h2>
-                <p class="mb-4">To the maximum extent permitted by law:</p>
-                <ul class="list-disc pl-6 space-y-2 marker:text-primary">
-                    <li>Middleman is not liable for indirect or consequential losses</li>
-                    <li>Total liability shall not exceed fees paid in the previous 6 months</li>
-                </ul>
-            </section>
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">
+            13. Account Suspension & Termination
+          </h2>
+          <p class="mb-4">Middleman may suspend or terminate accounts if:</p>
+          <ul class="list-disc pl-6 space-y-2 mb-4 marker:text-primary">
+            <li>These Terms are breached</li>
+            <li>Illegal or suspicious activity is detected</li>
+            <li>Required by law or regulators</li>
+          </ul>
+          <p>
+            Users will be provided an explanation where reasonably possible.
+          </p>
+        </section>
 
-            <section>
-                <h2 class="text-2xl font-bold text-white mb-6">18. Indemnification</h2>
-                <p class="mb-4">You agree to indemnify Middleman and its staff against claims arising from:</p>
-                <ul class="list-disc pl-6 space-y-2 marker:text-primary">
-                    <li>Your Platform use</li>
-                    <li>Law violations</li>
-                    <li>Breach of these Terms</li>
-                </ul>
-            </section>
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">
+            14. Feature Availability
+          </h2>
+          <p class="mb-4">Middleman may:</p>
+          <ul class="list-disc pl-6 space-y-2 marker:text-primary">
+            <li>Add, modify, or remove features</li>
+            <li>Disable services temporarily or permanently</li>
+            <li>Do so without prior notice</li>
+          </ul>
+        </section>
 
-            <section>
-                <h2 class="text-2xl font-bold text-white mb-6">19. Governing Law & Dispute Forum</h2>
-                <ul class="list-disc pl-6 space-y-2 marker:text-primary">
-                    <li>These Terms are governed by the laws of the Federal Republic of Nigeria.</li>
-                    <li>Disputes shall be resolved exclusively in Nigerian courts, unless otherwise required by law.</li>
-                </ul>
-            </section>
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">15. Taxes</h2>
+          <p>
+            Users are solely responsible for any taxes arising from Platform
+            use.
+          </p>
+        </section>
 
-            <section>
-                <h2 class="text-2xl font-bold text-white mb-6">20. Changes to Terms</h2>
-                <ul class="list-disc pl-6 space-y-2 marker:text-primary">
-                    <li>We may update these Terms from time to time.</li>
-                    <li>Continued use constitutes acceptance.</li>
-                </ul>
-            </section>
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">
+            16. Intellectual Property
+          </h2>
+          <p>
+            All Platform content and software belong to Middleman. Unauthorized
+            use is prohibited.
+          </p>
+        </section>
 
-            <section class="border-t border-white/10 pt-12 mt-12">
-                <h2 class="text-2xl font-bold text-white mb-6">21. Contact</h2>
-                <div class="space-y-4">
-                    <div class="flex items-center space-x-3 text-white">
-                        <span class="text-2xl">📧</span>
-                        <a href="mailto:support@midman.app" class="hover:text-secondary transition-colors text-lg">support@midman.app</a>
-                    </div>
-                    <div class="flex items-center space-x-3 text-white">
-                        <span class="text-2xl">🏢</span>
-                        <span class="text-lg">Middleman Technologies Ltd</span>
-                    </div>
-                    <div class="flex items-center space-x-3 text-white">
-                        <span class="text-2xl">📍</span>
-                        <span class="text-lg">Nigeria</span>
-                    </div>
-                </div>
-            </section>
-        </div>
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">
+            17. Limitation of Liability
+          </h2>
+          <p class="mb-4">To the maximum extent permitted by law:</p>
+          <ul class="list-disc pl-6 space-y-2 marker:text-primary">
+            <li>
+              Middleman is not liable for indirect or consequential losses
+            </li>
+            <li>
+              Total liability shall not exceed fees paid in the previous 6
+              months
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">
+            18. Indemnification
+          </h2>
+          <p class="mb-4">
+            You agree to indemnify Middleman and its staff against claims
+            arising from:
+          </p>
+          <ul class="list-disc pl-6 space-y-2 marker:text-primary">
+            <li>Your Platform use</li>
+            <li>Law violations</li>
+            <li>Breach of these Terms</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">
+            19. Governing Law & Dispute Forum
+          </h2>
+          <ul class="list-disc pl-6 space-y-2 marker:text-primary">
+            <li>
+              These Terms are governed by the laws of the Federal Republic of
+              Nigeria.
+            </li>
+            <li>
+              Disputes shall be resolved exclusively in Nigerian courts, unless
+              otherwise required by law.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">
+            20. Changes to Terms
+          </h2>
+          <ul class="list-disc pl-6 space-y-2 marker:text-primary">
+            <li>We may update these Terms from time to time.</li>
+            <li>Continued use constitutes acceptance.</li>
+          </ul>
+        </section>
+
+        <section class="border-t border-white/10 pt-12 mt-12">
+          <h2 class="text-2xl font-bold text-white mb-6">21. Contact</h2>
+          <div class="space-y-4">
+            <div class="flex items-center space-x-3 text-white">
+              <span class="text-2xl">📧</span>
+              <a
+                href="mailto:support@midman.app"
+                class="hover:text-secondary transition-colors text-lg"
+                >support@midman.app</a
+              >
+            </div>
+            <div class="flex items-center space-x-3 text-white">
+              <span class="text-2xl">🏢</span>
+              <span class="text-lg">Middleman Technologies Ltd</span>
+            </div>
+            <div class="flex items-center space-x-3 text-white">
+              <span class="text-2xl">📍</span>
+              <span class="text-lg">Nigeria</span>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer class="py-10 border-t border-white/10 mt-10 bg-[#01032D]">
-        <div class="container mx-auto px-6 text-center">
-            <p class="text-gray-500 mb-4">&copy; 2026 Middleman. All rights reserved.</p>
-            <div class="flex justify-center space-x-6 text-sm text-gray-400">
-                <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a>
-                <a href="/terms" class="hover:text-white transition-colors text-white">Terms and Conditions</a>
-                <a href="mailto:support@midman.app" class="hover:text-white transition-colors">Contact Support</a>
-            </div>
+      <div class="container mx-auto px-6 text-center">
+        <p class="text-gray-500 mb-4">
+          &copy; 2026 Middleman. All rights reserved.
+        </p>
+        <div
+          class="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-400"
+        >
+          <a href="/privacy" class="hover:text-white transition-colors"
+            >Privacy Policy</a
+          >
+          <a href="/terms" class="hover:text-white transition-colors text-white"
+            >Terms and Conditions</a
+          >
+          <a
+            href="mailto:support@midman.app"
+            class="hover:text-white transition-colors"
+            >Contact Support</a
+          >
         </div>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
