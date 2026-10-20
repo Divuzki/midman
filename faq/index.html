@@ -1,0 +1,1718 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frequently Asked Questions - Middleman</title>
+    <meta
+      name="description"
+      content="Answers to frequently asked questions about using Middleman for agreements, payments, withdrawals, disputes and account security."
+    />
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Alpine.js -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#3191EB",
+              secondary: "#05ECF4",
+              background: "#01032D",
+              dark: "#01032D",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      body {
+        background-color: #01032d;
+        color: #ffffff;
+      }
+      .gradient-text {
+        background: linear-gradient(90deg, #3191eb 0%, #05ecf4 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      /* Custom scrollbar for webkit */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #01032d;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    </style>
+  </head>
+  <body class="antialiased font-sans">
+    <!-- Navigation -->
+    <nav
+      class="sticky top-0 w-full z-50 py-4 bg-[#01032D]/90 backdrop-blur-md border-b border-white/10"
+    >
+      <div class="container mx-auto px-6 flex justify-between items-center">
+        <a href="https://www.midman.app" class="flex items-center space-x-2">
+          <div
+            class="w-6 h-6 p-0.5 rounded bg-white flex items-center justify-center"
+          >
+            <img
+              src="/logo.png"
+              alt="Middleman Logo"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <span class="text-xl font-bold tracking-tight">Middleman</span>
+        </a>
+        <a
+          href="/"
+          class="text-sm font-semibold text-gray-300 hover:text-white transition-colors flex items-center"
+        >
+          <svg
+            class="w-4 h-4 mr-1"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            ></path>
+          </svg>
+          Back to Home
+        </a>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <main class="container mx-auto px-6 py-12 max-w-4xl" x-data="{ active: null }">
+      <header class="mb-16">
+        <h1
+          class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 gradient-text"
+        >
+          Frequently Asked Questions
+        </h1>
+        <p class="text-gray-400">
+          Answers to common questions about agreements, payments, withdrawals,
+          disputes and your account.
+        </p>
+      </header>
+
+      <div class="space-y-12 text-gray-300 leading-relaxed text-lg">
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">1. Getting Started with Middleman</h2>
+          <div class="space-y-4">
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '1-1' ? active = null : active = '1-1'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">What is Middleman?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '1-1'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '1-1'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Middleman is an escrow platform designed to help buyers and sellers transact with greater confidence. It provides a structured agreement process so both parties can agree on the terms, fund the transaction, and follow the delivery and confirmation process before funds are released.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '1-2' ? active = null : active = '1-2'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">How does Middleman work?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '1-2'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '1-2'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                <p class="mb-3">The process is straightforward:</p>
+                <ol class="list-decimal pl-6 space-y-1 mb-3 marker:text-primary">
+                  <li>Create an agreement and enter the agreed terms.</li>
+                  <li>Invite the other party to join.</li>
+                  <li>Both parties review and accept the terms.</li>
+                  <li>The buyer funds the agreement through the available payment options.</li>
+                  <li>The seller delivers the agreed goods or services and confirms delivery.</li>
+                  <li>The buyer confirms receipt.</li>
+                  <li>Funds are released according to the agreement and applicable procedures.</li>
+                </ol>
+                <p>If a disagreement arises, either party can raise a dispute through the platform.</p>
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '1-3' ? active = null : active = '1-3'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">Who can create an agreement?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '1-3'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '1-3'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Either the buyer or the seller can create an agreement. The other party must join and accept the terms before the agreement proceeds to funding.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '1-4' ? active = null : active = '1-4'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">Does the other party need a Middleman account?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '1-4'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '1-4'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                The other party must be able to join the agreement through Middleman's supported invitation process. Follow the invitation instructions provided when you create or share an agreement.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '1-5' ? active = null : active = '1-5'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">Is Middleman suitable for every transaction?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '1-5'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '1-5'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Middleman is designed to facilitate transactions through agreed terms and a structured payment process. Before using the platform, make sure the transaction is lawful and that the goods or services comply with Middleman's applicable terms and restrictions.
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">2. Agreements and Deal Status</h2>
+          <div class="space-y-4">
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '2-1' ? active = null : active = '2-1'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">How do I invite the other party?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '2-1'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '2-1'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Use the available agreement invitation or shareable-link option. Where supported, you can also find the other party using their username or email address. Always confirm that you have selected the correct person before proceeding.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '2-2' ? active = null : active = '2-2'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">Why is my agreement waiting for the other party?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '2-2'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '2-2'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                The agreement remains in Awaiting Other Party until the other party joins. Both parties must join and accept the terms before the agreement can proceed to funding.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '2-3' ? active = null : active = '2-3'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">What do the agreement statuses mean?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '2-3'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '2-3'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                <ul class="list-disc pl-6 space-y-1 marker:text-primary">
+                  <li><strong class="text-gray-200">Awaiting Other Party:</strong> The other party has not yet joined.</li>
+                  <li><strong class="text-gray-200">Awaiting Funding:</strong> Both parties have joined and accepted the terms, but funding is still pending.</li>
+                  <li><strong class="text-gray-200">In Progress:</strong> The agreement is funded and the transaction is underway.</li>
+                  <li><strong class="text-gray-200">Awaiting Confirmation:</strong> The seller has confirmed delivery, and the buyer needs to confirm receipt.</li>
+                  <li><strong class="text-gray-200">Disputed:</strong> A dispute has interrupted the ordinary fund-release process.</li>
+                  <li><strong class="text-gray-200">Completed:</strong> The agreement has been completed and funds have been released as applicable.</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '2-4' ? active = null : active = '2-4'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">Can I change an agreement after creating it?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '2-4'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '2-4'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Some agreement details may be changed. Material changes, such as the amount or timeline, require confirmation from both parties before they take effect. Always ensure the final terms reflect what you and the other party have agreed.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '2-5' ? active = null : active = '2-5'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">Can I cancel an agreement?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '2-5'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '2-5'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Normal cancellation is available only before any payment has been made. If payment has already occurred, contact support or use the dispute process where appropriate.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '2-6' ? active = null : active = '2-6'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">Does an agreement expire automatically?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '2-6'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '2-6'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                No. An agreement does not automatically expire simply because a party has not responded or a delivery timeline has passed. The parties may be prompted to confirm whether delivery occurred.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '2-7' ? active = null : active = '2-7'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">What happens if the delivery deadline passes?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '2-7'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '2-7'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                A missed deadline does not automatically prove that delivery failed, and it does not automatically trigger a refund or release of funds. The parties may be asked to confirm the delivery situation. If there is a disagreement, the dispute process may be appropriate.
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">3. Deposits, Fees and Wallets</h2>
+          <div class="space-y-4">
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '3-1' ? active = null : active = '3-1'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">How can I fund an agreement?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '3-1'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '3-1'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Use the payment methods displayed in your Middleman account. The currently supported methods include bank transfer and wallet balance, subject to the options available to you during the transaction.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '3-2' ? active = null : active = '3-2'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">My deposit has not arrived. What should I do?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '3-2'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '3-2'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                <p class="mb-3">Allow up to 30 minutes for the deposit to appear. If it is still missing after that period, contact support with your payment reference, amount, approximate payment time, and receipt if available.</p>
+                <p>Do not make another payment simply because the first deposit is delayed.</p>
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '3-3' ? active = null : active = '3-3'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">What if I accidentally pay more than once?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '3-3'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '3-3'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Contact support with the references for both payments. Middleman will check the transactions and arrange the appropriate handling of the duplicate payment. Do not assume that a refund has completed until its status is confirmed.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '3-4' ? active = null : active = '3-4'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">What if I pay the wrong amount?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '3-4'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '3-4'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Contact support and provide the expected amount, the amount paid, and the payment reference. Each case is reviewed individually. Do not send an additional payment to correct the difference until the first transaction has been reviewed.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '3-5' ? active = null : active = '3-5'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">Does Middleman charge fees?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '3-5'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '3-5'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Applicable service and transaction fees are displayed before you confirm the relevant transaction. Review the displayed fee and total amount before proceeding.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '3-6' ? active = null : active = '3-6'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">Where do my funds go after an agreement is completed?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '3-6'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '3-6'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Funds released from an agreement are credited to the recipient's Middleman wallet first. The recipient can then withdraw eligible funds to an eligible bank account.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '3-7' ? active = null : active = '3-7'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">Why is some of my wallet balance unavailable?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '3-7'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '3-7'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Your wallet may distinguish between available funds and funds that are locked, pending, or subject to a review. Only eligible available funds can be withdrawn. Contact support if you believe the displayed balance is incorrect.
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">4. Withdrawals and Identity Verification</h2>
+          <div class="space-y-4">
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '4-1' ? active = null : active = '4-1'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">Do I need to verify my identity before using Middleman?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '4-1'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '4-1'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                You can sign up, create or join agreements, fund deals, and complete transactions without completing identity verification. KYC approval is required before you can withdraw funds.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '4-2' ? active = null : active = '4-2'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">How do I withdraw money?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '4-2'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '4-2'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Complete the required identity verification, select an eligible bank account that matches your verified identity, and follow the withdrawal instructions in your account. Applicable fees and any required approval will be shown or communicated through the relevant process.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '4-3' ? active = null : active = '4-3'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">Why must my bank account name match my verified identity?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '4-3'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '4-3'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                The name-matching requirement is a security measure intended to reduce misuse and help ensure that withdrawals go to the verified account holder. Withdrawals to accounts with mismatched names may be blocked.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '4-4' ? active = null : active = '4-4'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">My identity verification is still pending. What should I do?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '4-4'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '4-4'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                The target is to complete verification within 24 hours of submission. If your verification remains pending beyond that period, contact support for follow-up. Actual completion may depend on the review required.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '4-5' ? active = null : active = '4-5'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">What if my identity verification fails?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '4-5'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '4-5'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Review the reason shown in the verification process and follow the available retry or resubmission instructions. If you believe the result is incorrect or cannot resubmit, contact support for assistance.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '4-6' ? active = null : active = '4-6'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">My withdrawal has failed or has not arrived. What should I do?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '4-6'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '4-6'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Contact support with the withdrawal reference, amount, approximate time, and status shown in your account. Middleman will check the relevant records. A failed withdrawal does not automatically mean that a reversal or wallet credit has been completed, and a provider processing a payout does not necessarily mean your bank has credited it.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '4-7' ? active = null : active = '4-7'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">How long do withdrawals take?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '4-7'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '4-7'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Withdrawal timing depends on the transaction status, any required review or approval, payment-provider processing, and the receiving bank. Contact support if your withdrawal appears delayed. A support response time is not a guarantee of payout completion.
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">5. Delivery Problems and Disputes</h2>
+          <div class="space-y-4">
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '5-1' ? active = null : active = '5-1'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">What should I do if the seller does not deliver?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '5-1'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '5-1'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Review the agreement terms and contact the seller where appropriate. If you believe the seller has failed to meet the agreed terms, you can raise a dispute through the applicable process.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '5-2' ? active = null : active = '5-2'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">What if the buyer says they have not received the goods or services?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '5-2'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '5-2'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                The buyer can raise a dispute and provide relevant information. Middleman will review the agreement terms and available evidence rather than assuming that either party is automatically correct.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '5-3' ? active = null : active = '5-3'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">Who can raise a dispute?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '5-3'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '5-3'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Either party can raise a dispute when there is a disagreement about the agreement, delivery, or release of funds.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '5-4' ? active = null : active = '5-4'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">What happens after a dispute is raised?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '5-4'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '5-4'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Once the dispute is formally raised, ordinary fund release is stopped while the case is handled. Both parties are given 30 minutes to attempt to resolve the issue. If the matter remains unresolved, or one party does not respond, Middleman proceeds to review the available evidence.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '5-5' ? active = null : active = '5-5'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">What evidence should I provide?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '5-5'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '5-5'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Provide relevant agreement terms, payment receipts, delivery records, messages, and other information that directly relates to the dispute. Submit genuine and unaltered evidence, and avoid sharing unnecessary sensitive personal information.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '5-6' ? active = null : active = '5-6'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">How does Middleman decide a dispute?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '5-6'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '5-6'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                An authorized reviewer considers the agreement and available evidence. Depending on the circumstances, the outcome may include releasing funds to the seller, refunding the buyer, splitting the funds where justified, or continuing a lawful hold where necessary.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '5-7' ? active = null : active = '5-7'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">How long does dispute resolution take?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '5-7'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '5-7'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                There is no fixed resolution timeframe. The time required depends on the circumstances and evidence available. Middleman will provide updates as the case progresses.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '5-8' ? active = null : active = '5-8'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">What happens if the other party does not respond?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '5-8'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '5-8'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                The review can proceed using the evidence available. A party's silence alone does not automatically determine the outcome.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '5-9' ? active = null : active = '5-9'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">Can I challenge a dispute decision?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '5-9'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '5-9'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                You may submit a request for further review, which will be assessed under the applicable process. Decisions are final except where applicable law requires otherwise or further review is warranted. Submitting a review request does not guarantee that the decision will be reversed.
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">6. Account Security and Fraud Prevention</h2>
+          <div class="space-y-4">
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '6-1' ? active = null : active = '6-1'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">What should I do if I think I am being scammed?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '6-1'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '6-1'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Stop sending additional money, preserve relevant messages and receipts, and report the issue to Middleman support. If a funded agreement is involved, use the dispute process where appropriate. Middleman will assess the report, but recovery of funds cannot be guaranteed.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '6-2' ? active = null : active = '6-2'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">Will Middleman ask for my password or verification code?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '6-2'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '6-2'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                You should never disclose your password, PIN, one-time verification code, or bank login credentials through ordinary support chat. If someone claiming to represent Middleman requests these details, do not share them and report the contact.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '6-3' ? active = null : active = '6-3'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">What if I suspect someone has accessed my account?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '6-3'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '6-3'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Contact support immediately. Identify any suspicious transactions or agreements and follow the official account-security and recovery process. Do not share your credentials with anyone offering unofficial recovery assistance.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '6-4' ? active = null : active = '6-4'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">What should I do if I receive a suspicious link or message?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '6-4'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '6-4'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Do not enter sensitive information or make a payment through an unverified link. If you have already shared credentials or financial information, contact support immediately and explain what may have been exposed.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '6-5' ? active = null : active = '6-5'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">Can Middleman guarantee that my money will be recovered after fraud?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '6-5'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '6-5'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                No. Recovery depends on the circumstances, the payment route, the transaction status, and other relevant factors. Report suspected fraud as quickly as possible so it can be assessed.
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2 class="text-2xl font-bold text-white mb-6">7. Support, Account Closure and Privacy</h2>
+          <div class="space-y-4">
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '7-1' ? active = null : active = '7-1'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">How do I contact Middleman support?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '7-1'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '7-1'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Use the support options provided on the Middleman website or within your account. Include the relevant agreement, transaction, or withdrawal reference where available. Never include passwords, PINs, or one-time codes in your message.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '7-2' ? active = null : active = '7-2'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">How quickly will support respond?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '7-2'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '7-2'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Middleman's support acknowledgment target is within one hour. This is a target for acknowledging your request, not a guarantee that an investigation, dispute, refund, verification, or withdrawal will be completed within one hour.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '7-3' ? active = null : active = '7-3'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">Can I close my Middleman account?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '7-3'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '7-3'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Yes, you can request account closure. Every closure request is reviewed and approved by Support. Active agreements, disputes, pending transactions, and wallet balances must be assessed before closure can be completed.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '7-4' ? active = null : active = '7-4'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">What happens if I have money in my wallet when I request closure?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '7-4'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '7-4'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Eligible available funds must be withdrawn before closure, subject to the normal identity-verification and bank-account requirements. Locked, pending, disputed, or restricted funds require the appropriate handling process.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '7-5' ? active = null : active = '7-5'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">Does closing my account automatically delete my personal data?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '7-5'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '7-5'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                No. Account closure and personal-data deletion are separate processes. Some information may need to be retained where required by applicable law or legitimate recordkeeping obligations.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '7-6' ? active = null : active = '7-6'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">How do I request deletion of my personal data?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '7-6'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '7-6'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Submit a request through Middleman's support channel. Privacy/Compliance will review the request, verify ownership where necessary, and assess which information may be deleted and which must be retained under applicable requirements.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '7-7' ? active = null : active = '7-7'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">How does Middleman use and protect my personal information?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '7-7'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '7-7'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Middleman's collection, use, sharing, storage, and retention of personal information are explained in the Privacy Policy. Please review that policy for details about your rights and how to submit a privacy-related request.
+              </div>
+            </div>
+            <div
+              class="border border-white/10 rounded-xl overflow-hidden bg-white/5"
+            >
+              <button
+                @click="active === '7-8' ? active = null : active = '7-8'"
+                class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none"
+              >
+                <span class="font-semibold text-lg">What should I do if I believe there has been a data breach?</span>
+                <svg
+                  class="w-5 h-5 flex-shrink-0 ml-4 transform transition-transform duration-200"
+                  :class="{'rotate-180': active === '7-8'}"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                x-show="active === '7-8'"
+                x-collapse
+                class="px-6 pb-4 text-gray-400"
+              >
+                Contact Middleman through its official support or privacy contact channel and describe what you believe happened. Middleman will assess reported incidents and take appropriate steps in accordance with applicable law and its security procedures.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="border-t border-white/10 pt-12 mt-12">
+          <h2 class="text-2xl font-bold text-white mb-6">Still need help?</h2>
+          <p class="mb-4">
+            Contact our support team and include the relevant agreement,
+            transaction or withdrawal reference where available.
+          </p>
+          <div class="flex items-center space-x-3 text-white">
+            <span class="text-2xl">📧</span>
+            <a
+              href="mailto:support@midman.app"
+              class="hover:text-secondary transition-colors text-lg"
+              >support@midman.app</a
+            >
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-white/10 mt-10 bg-[#01032D]">
+      <div class="container mx-auto px-6 text-center">
+        <p class="text-gray-500 mb-2">
+          Create secure escrow agreements for online transactions between buyers
+          and sellers
+        </p>
+        <p class="text-gray-500 mb-8 text-sm">
+          &copy; 2026 Middleman. All rights reserved.
+        </p>
+        <div
+          class="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-400"
+        >
+          <a href="/privacy" class="hover:text-white transition-colors"
+            >Privacy Policy</a
+          >
+          <a href="/terms" class="hover:text-white transition-colors"
+            >Terms and Conditions</a
+          >
+          <a href="/faq" class="hover:text-white transition-colors text-white">FAQ</a>
+          <a
+            href="mailto:support@midman.app"
+            class="hover:text-white transition-colors"
+            >Contact Support</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
